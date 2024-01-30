@@ -5,7 +5,7 @@ function saveNote() {
       const savedNotes = JSON.parse(localStorage.getItem("myNotes")) || [];
       savedNotes.push(note);
       localStorage.setItem("myNotes", JSON.stringify(savedNotes));
-     
+      alert("YOUR NOTES IS SAVES SUCCESSFULLY.");
     } else {
       alert("Please enter a note before saving.");
     }
